@@ -3,25 +3,28 @@
 
 BVS (Business Value System), a business value system based on blockchain technology, aims to realize the value exchange network of distributed applications and build a cluster of mobile terminal business innovative applications. The overall structure and consensus design of BVS can rapidly promote the commercial circulation of blockchain technology, and people can more efficiently engage in investment, transaction, promotion, trade and other exchange businesses, deeply explore the commercial value of blockchain and realize blockchain 4.0.
 
-Some of the groundbreaking features of BVSVC include:
+## Architecture
 
-1. Free Rate Limited Transactions
-1. Low Latency Block confirmation (0.5 seconds)
-1. Low-overhead Byzantine Fault Tolerant Finality
-1. Designed for optional high-overhead, low-latency BFT finality
-1. Smart contract platform powered by WebAssembly
-1. Designed for Sparse Header Light Client Validation
-1. Scheduled Recurring Transactions
-1. Time Delay Security
-1. Hierarchical Role Based Permissions
-1. Support for Biometric Hardware Secured Keys (e.g. Apple Secure Enclave)
-1. Designed for Parallel Execution of Context Free Validation Logic
-1. Designed for Inter Blockchain Communication
+BVS adopts a 3-layer architecture divided into Storage Layer, Core Layer, and Application Layer. The BVS protocol adheres to Google Protobuf, which intrinsically supports multi- language extension.
+ 
+![](https://ws2.sinaimg.cn/large/006tNc79gy1g3qbo8ybpvj30u00ugnpb.jpg)
 
-BVSVC is released under the open source MIT license and is offered “AS IS” without warranty of any kind, express or implied. Any security provided by the BVSVC software depends in part on how it is used, configured, and deployed. BVSVC is built upon many third-party libraries such as WABT (Apache License) and WAVM (BSD 3-clause) which are also provided “AS IS” without warranty of any kind. Without limiting the generality of the foregoing, bvsystem.org makes no representation or guarantee that BVSVC or any third-party libraries will perform as intended or will be free of errors, bugs or faulty code. Both may fail in large or small ways that could completely or partially limit functionality or compromise computer systems. If you use or implement BVSVC, you do so at your own risk. In no event will bvsystem.org be liable to any party for any damages whatsoever, even if it had been advised of the possibility of damage.
+###	Core
 
-## Core
 There are several modules in the core layer, including smart contracts, account management, and consensus. A stack-based virtual machine is implemented on BVS and an optimized instruction set is used. In order to better support DApp developers, Solidity4 was chosen as the smart contract language, followed by future support of other advanced languages. In addition, BVS's consensus mechanism is based on Delegated Proof of Value (DPoV) and many innovations were made in order to meet its unique requirements.
+
+###	Storage
+
+BVS designed a unique distributed storage protocol consisting of Block Storage and State Storage. The notion of a graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
+
+###	Application
+
+Developers can create a diverse range of DApps and customized wallets on BVS. Since BVS enables smart contracts to be deployed and executed, the opportunities of utility applications are unlimited.
+
+###	Protocol
+
+BVS protocol adheres to Google Protocol Buffers5, which is a language-neutral, platform- neutral, and extensible way of serializing structured data for use in communications protocols, data storage, and more.
+
 
 ## Supported Operating Systems
 BVSVC currently supports the following operating systems:
