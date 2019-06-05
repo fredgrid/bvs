@@ -1,0 +1,14 @@
+{
+    "bvsio-lrt":
+    {
+        "pipeline-branch": "legacy-os"
+    },
+    "bvsio-nightly-builds":
+    {
+        "pipeline-branch": "legacy-os"
+    },
+    "bvsio-base-images":
+    {
+        "pipeline-branch": "release/1.7.x"
+    }
+}

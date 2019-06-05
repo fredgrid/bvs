@@ -1,0 +1,5 @@
+add_subdirectory( nodbvs )
+add_subdirectory( clbvs )
+add_subdirectory( kbvsd )
+add_subdirectory( bvsio-launcher )
+add_subdirectory( bvsio-blocklog )

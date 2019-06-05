@@ -1,0 +1,12 @@
+/**
+ *  @file
+ *  @copyright defined in bvs/LICENSE
+ */
+
+#include <bvsio/chain/genesis_state.hpp>
+
+namespace bvsio { namespace chain {
+
+const string genesis_state::bvsio_root_key = "${BVSVC_ROOT_KEY}";
+
+} } // namespace bvsio::chain
