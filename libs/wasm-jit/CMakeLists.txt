@@ -5,7 +5,7 @@
 #
 #set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 #
-## Put executables in the bin dir, and libraries in the lib dir.
+## Put executables in the bin dir, and libs in the lib dir.
 #SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
 #SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 #
@@ -22,7 +22,7 @@ include_directories(${WAVM_INCLUDE_DIR})
 	# Disable RTTI
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti")
 
-	# Ensure that even static libraries are relocatable so they can be linked into a .so
+	# Ensure that even static libs are relocatable so they can be linked into a .so
 #	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 
 	# Enable asan in debug builds.

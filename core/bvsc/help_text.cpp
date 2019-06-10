@@ -274,7 +274,7 @@ namespace bvsio { namespace client { namespace help {
 
 bool print_recognized_errors(const fc::exception& e, const bool verbose_errors) {
    // bvs recognized error code is from 3000000
-   // refer to libraries/chain/include/bvsio/chain/exceptions.hpp
+   // refer to libs/chain/include/bvsio/chain/exceptions.hpp
    if (e.code() >= chain_exception::code_value) {
       std::string advice, explanation, stack_trace;
 

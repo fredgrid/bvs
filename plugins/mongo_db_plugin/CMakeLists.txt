@@ -4,16 +4,16 @@ if(BUILD_MONGO_DB_PLUGIN)
 
   if (libmongoc-1.0_FOUND)
 
-      # BVS has no direct dependencies on libmongoc but its shared libraries
-      # will need to be present at runtime for the C++ libraries we use:
+      # BVS has no direct dependencies on libmongoc but its shared libs
+      # will need to be present at runtime for the C++ libs we use:
       # libbsoncxx & libmongocxx (both from github.com/mongodb/mongo-cxx-driver)
 
       # The *.cmake package files provided by mongo-cxx-driver don't give us the
-      # absolute path to the libraries, which is needed whenever they are not
+      # absolute path to the libs, which is needed whenever they are not
       # installed in system-known locations.  CMake requires the absolute paths
       # in target_link_libraries() since we are builiding an archive and the
       # link step for all executables using this archive must include the
-      # mongo-cxx-driver libraries libmongocxx and libbsoncxx.
+      # mongo-cxx-driver libs libmongocxx and libbsoncxx.
 
       find_package(libbsoncxx-static REQUIRED)
       message(STATUS "Found bsoncxx headers: ${LIBBSONCXX_STATIC_INCLUDE_DIRS}")
